@@ -1,0 +1,7 @@
+-- Pesquisar código do Produto por nome:
+SELECT CODIGO_DO_PRODUTO, NOME_DO_PRODUTO FROM TABELA_DE_PRODUTOS WHERE NOME_DO_PRODUTO = 'Linha Refrescante - 1 Litro - Morango/Limao';
+
+-- Pesquisar produto ordenado pela maior venda:
+SELECT CODIGO_DO_PRODUTO, QUANTIDADE FROM ITENS_NOTAS_FISCAIS
+WHERE CODIGO_DO_PRODUTO = '1101035'
+ORDER BY QUANTIDADE DESC;
